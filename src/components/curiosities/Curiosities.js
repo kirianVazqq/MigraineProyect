@@ -1,15 +1,14 @@
-// Footer.js
 import React from 'react';
 import './Curiosities.css';
+import CuriosityList from "../../components/curiositiesjson/Curiositiesjson.js";
 
 const Curiosities = () => {
     return (
         <div className="container-curiosities">
-            <button>CURIOSIDADES</button>
-            <p className="text-on-image">
-                Migrañas en jóvenes: Afectan al 80% de pacientes antes de los 30 años, más comunes en mujeres que en hombres desde la adolescencia.
-            </p>
-            <img src="images/imagentexto.jpg" alt="Imagen con texto"></img>
+            <div className="overlay">
+                <CuriosityList />
+            </div>
+            <img className="background-image" src="images/imagentexto.jpg" alt="Imagen con texto" />
         </div>
     );
 };

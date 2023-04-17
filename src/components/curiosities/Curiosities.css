@@ -1,44 +1,38 @@
 .container-curiosities {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1rem; /* Agregar un pequeño padding alrededor del contenido en móviles */
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Ajustes para tablet */
+@media (min-width: 768px) {
+  .overlay {
+      padding: 2rem; /* Aumentar el padding alrededor del contenido en tablets */
   }
-  
-  .text-on-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+}
+
+/* Ajustes para desktop */
+@media (min-width: 992px) {
+  .overlay {
+      padding: 3rem; /* Aumentar el padding alrededor del contenido en desktops */
   }
-  
-  img {
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Estilos para dispositivos con un ancho de viewport de al menos 768px */
-  @media (min-width: 768px) {
-    .text-on-image {
-      font-size: 24px;
-    }
-  }
-  
-  /* Estilos para dispositivos con un ancho de viewport de al menos 1024px */
-  @media (min-width: 1024px) {
-    .text-on-image {
-      font-size: 28px;
-    }
-  }
-  
-  
+}
