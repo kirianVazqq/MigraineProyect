@@ -1,0 +1,48 @@
+/* ImageCarousel.css */
+.carousel-container {
+  position: relative;
+  width: 100%;
+ 
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+/* Estilos para pantallas grandes (ejemplo: 1024px en adelante) */
+@media (min-width: 1024px) {
+  .carousel-container {
+    width: 100%; /* Ancho igual al 100% del viewport */
+    height: 100vh; /* Altura igual al 100% del viewport */
+  }
+
+  .carousel-image {
+    width: 100%; /* Ancho igual al 100% del viewport */
+    height: 100vh; /* Altura igual al 100% del viewport */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio disponible manteniendo su relación de aspecto */
+  }
+}
