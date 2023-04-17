@@ -1,0 +1,44 @@
+.container-curiosities {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .text-on-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilos para dispositivos con un ancho de viewport de al menos 768px */
+  @media (min-width: 768px) {
+    .text-on-image {
+      font-size: 24px;
+    }
+  }
+  
+  /* Estilos para dispositivos con un ancho de viewport de al menos 1024px */
+  @media (min-width: 1024px) {
+    .text-on-image {
+      font-size: 28px;
+    }
+  }
+  
+  

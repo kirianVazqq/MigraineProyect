@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return(
         <div className="navbar">
-            <div className="nav_logo"><img src="../img/logocabeza.png"></img></div>
+            <div className="nav_logo"><img src="images/logocabeza.png"></img></div>
             <div className={`nav_items ${isOpen && "open"}`}>
                 <a href="#"> INICIO</a>
                 <a href="#"> BIO</a>
