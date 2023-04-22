@@ -2,6 +2,8 @@
 .img-text{
     position: relative;
     display: inline-block;
+    display:flex;
+    flex-direction: row;
 }
 .img-text img {
     display: block;

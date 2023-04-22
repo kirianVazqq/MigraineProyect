@@ -1,0 +1,39 @@
+.Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:-25vh;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    width: 300px;
+  }
+
+  /* .form-group label {
+    font-weight: bold;
+  } */
+
+  
+ .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#D5B6C1;
+ }
+
+ .save{
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 3px;
+    margin-left: 33%;
+    margin-top:5%;
+ }
+
+ .observations{
+    height: 50px;
+ }
