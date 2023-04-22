@@ -4,6 +4,7 @@ import React from 'react';
 import Home from './pages/home/Home';
 import Form from './pages/form/Form';
 import './App.css';
+import Info from './pages/info/Info';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/home" element={<Home />}/>
       <Route path="/form" element={<Form />}/>
+      <Route path="/info" element={<Info />}/>
     </Routes>
   );
 }
