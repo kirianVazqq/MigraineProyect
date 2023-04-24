@@ -1,4 +1,6 @@
-
+body{
+  background-color: #F4F8FA ;
+}
 .img-text{
     position: relative;
     display: inline-block;

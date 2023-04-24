@@ -35,5 +35,25 @@
  }
 
  .observations{
-    height: 50px;
+    height: 70px;
+ }
+
+@media only screen and (min-width: 992px) {
+   .form-group {
+     width: 500px;
+   }
+ 
+   .save {
+     margin-left: 38%;
+   }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+   .form-group {
+     width: 700px;
+   }
+ 
+   .save {
+     margin-left: 42%;
+   }
  }

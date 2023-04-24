@@ -3,12 +3,18 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import "./Info.css";
 import Imgtext from "../../components/imgText/Imgtext";
+import MapCountry from "../../components/MapCountry/MapCountry";
+import CountryList from "../../services/MapCountry.service";
+
+
 
 function Info() {
+    const currentCountryList = CountryList();
     return (
         <div className="info">
             <Navbar />
             {
+                <>
                 <div>
                     <Imgtext
                         imageSrc="/images/imageninfoancha.jpg"
@@ -22,10 +28,11 @@ function Info() {
                    señala que la migraña es la octava enfermedad más incapacitante en
                    términos de días de vida afectados por la discapacidad."
                     />
-                    <div>
-
-                    </div>
+                 
                 </div>
+               <MapCountry countries ={currentCountryList}/>
+               
+                </>
             }
             <Footer />
         </div>

@@ -3,11 +3,30 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import "./Form.css";
 
+const calculateSleepDuration = (bedtime, wakeup) => {
+  if (!bedtime || !wakeup) return "";
+
+  const bedtimeArray = bedtime.split(":");
+  const wakeupArray = wakeup.split(":");
+
+  const bedtimeInMinutes = parseInt(bedtimeArray[0]) * 60 + parseInt(bedtimeArray[1]);
+  const wakeupInMinutes = parseInt(wakeupArray[0]) * 60 + parseInt(wakeupArray[1]);
+
+  const durationInMinutes = wakeupInMinutes >= bedtimeInMinutes
+    ? wakeupInMinutes - bedtimeInMinutes
+    : 24 * 60 - (bedtimeInMinutes - wakeupInMinutes);
+
+  const hours = Math.floor(durationInMinutes / 60);
+  const minutes = durationInMinutes % 60;
+
+  return `${hours}h ${minutes}m`;
+};
+
 function Form() {
   const [day, setDay] = useState("");
   const [symptoms, setSymptoms] = useState("");
   const [hoursSlept, setHoursSlept] = useState("");
-
+  const [wakeupTime, setWakeupTime] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
@@ -33,13 +52,30 @@ function Form() {
       </div>
 
       <div className="form-group">
-        <label>Horas de sueño:</label>
-        <input
-          type="time"
-          value={hoursSlept}
-          onChange={(e) => setHoursSlept(e.target.value)}
-        />
-      </div>
+  <label>Hora de acostarse:</label>
+  <input
+    type="time"
+    value={hoursSlept}
+    onChange={(e) => setHoursSlept(e.target.value)}
+  />
+</div>
+<div className="form-group">
+  <label>Hora de levantarse:</label>
+  <input
+    type="time"
+    value={wakeupTime}
+    onChange={(e) => setWakeupTime(e.target.value)}
+  />
+</div>
+<div className="form-group">
+  <label>Duración del sueño:</label>
+  <input
+    type="text"
+    value={calculateSleepDuration(hoursSlept, wakeupTime)}
+    readOnly
+  />
+</div>
+
     </div>
 
     <div className="form-row">
@@ -76,13 +112,12 @@ function Form() {
     </div>
 
     <div className="form-group">
-      <label>Observaciones:</label>
-      <input className="observations"
-        type="number"
-        value={hoursSlept}
-        onChange={(e) => setHoursSlept(e.target.value)}
-      />
-    </div>
+  <label>Observaciones:</label>
+  <textarea className="observations"
+   
+  />
+</div>
+
     
     <button className="save" type="submit">
       Guardar
