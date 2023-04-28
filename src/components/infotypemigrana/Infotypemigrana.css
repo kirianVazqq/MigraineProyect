@@ -1,0 +1,123 @@
+body {
+  background-color: #f0f0f0;
+}
+.info-migraine {
+  margin: 5% 10%;
+}
+.info-migraine h1 {
+  color: #7fbeab;
+  font-size: 50px;
+}
+.info-migraine p {
+  color: black;
+  font-size: 25px;
+}
+.migraine-recurrence {
+  /* width: 100%; */
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.type-episodic {
+  width: 50vh;
+  margin-top: 1px;
+  margin: 70px;
+ 
+}
+.type-episodic img {
+  max-width: 300px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.type-episodic span {
+  color: #7fbeab;
+  font-size: 35px;
+}
+.type-chronic {
+  width: 50vh;
+  margin-top: 1px;
+  margin: 70px;
+
+}
+.type-chronic img {
+  max-width: 300px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin-bottom: 15px;
+}
+.type-chronic span {
+  color: #7fbeab;
+  font-size: 35px;
+}
+.type-no-aura {
+  margin: 5% 10%;
+}
+.type-no-aura p {
+  color: black;
+  font-size: 25px;
+  
+}
+.type-no-aura h1 {
+  color: #7fbeab;
+  font-size: 50px;
+}
+.type-no-aura strong {
+  color: #7fbeab;
+  font-size: 35px;
+}
+.type-no-aura li {
+  color: black;
+  font-size: 22px;
+}
+.type-no-aura span {
+  color: rgb(12, 196, 134);
+  font-size: 30px;
+}
+.type-aura {
+  margin: 5% 10%;
+}
+.type-aura strong {
+  color: #7fbeab;
+  font-size: 35px;
+}
+.type-aura p {
+  color: black;
+  font-size: 25px;
+}
+.type-aura li {
+  color: black;
+  font-size: 22px;
+}
+.type-menstrual {
+  margin: 5% 10%;
+}
+.type-menstrual strong {
+  color: #7fbeab;
+  font-size: 35px;
+}
+.type-menstrual p {
+  color: black;
+  font-size: 25px;
+}
+.type-menstrual li {
+  color: black;
+  font-size: 22px;
+}
+.text-map {
+  margin: 5% 10%;
+}
+.text-map h1 {
+  color: #7fbeab;
+  font-size: 50px;
+}
+.text-map p {
+  color: black;
+  font-size: 25px;
+}

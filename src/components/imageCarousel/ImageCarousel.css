@@ -1,11 +1,11 @@
-/* ImageCarousel.css */
+
 .carousel-container {
   position: relative;
-  width: 100%;
- 
+  width: auto;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
+  
 }
 
 .carousel-image {
@@ -34,18 +34,15 @@
 }
 
 
-
-/* Estilos para pantallas grandes (ejemplo: 1024px en adelante) */
 @media (min-width: 1024px) {
   .carousel-container {
 
+
   }
 
-  .carousel-image {
-  
-   
-  }
 }
+
+
 
 /*
 @media (min-width: 1024px) {

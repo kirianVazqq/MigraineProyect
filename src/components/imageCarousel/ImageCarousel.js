@@ -1,5 +1,4 @@
-// ImageCarousel.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ImageCarousel.css";
 
 const ImageCarousel = ({ images }) => {
@@ -14,6 +13,11 @@ const ImageCarousel = ({ images }) => {
       (currentImageIndex - 1 + images.length) % images.length
     );
   };
+
+  useEffect(() => {
+    const interval = setInterval(goToNextImage, 4000); // cambia 3000 por el tiempo deseado en milisegundos
+    return () => clearInterval(interval);
+  }, [currentImageIndex]);
 
   return (
     <div className="carousel-container">
@@ -32,7 +36,7 @@ const ImageCarousel = ({ images }) => {
   );
 };
 
-export default ImageCarousel; 
+export default ImageCarousel;
 
 
 

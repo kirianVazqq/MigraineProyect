@@ -15,7 +15,6 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 1rem; /* Agregar un pequeño padding alrededor del contenido en móviles */
 }
 
 .background-image {
@@ -25,14 +24,10 @@
 
 /* Ajustes para tablet */
 @media (min-width: 768px) {
-  .overlay {
-      padding: 2rem; /* Aumentar el padding alrededor del contenido en tablets */
-  }
+
 }
 
 /* Ajustes para desktop */
 @media (min-width: 992px) {
-  .overlay {
-      padding: 3rem; /* Aumentar el padding alrededor del contenido en desktops */
-  }
+
 }

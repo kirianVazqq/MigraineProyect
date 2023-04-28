@@ -1,0 +1,80 @@
+.div-infoicon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F0F0;
+  margin-top: 30px;
+
+}
+
+.form-icon{
+    width: 50vh;
+    margin-top: 1px;
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-icon img {
+  max-width: 300px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin-bottom: 5px;
+
+  
+}
+.information-icon{
+    width: 50vh;
+    margin-top: 10px;
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.information-icon img {
+  max-width: 300px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin-bottom: 5px;
+  
+}
+.information-icon p{
+    
+    font-size: 25px;
+    text-align: justify;
+   
+  }
+
+.form-icon p {
+   
+    font-size: 25px;
+    text-align: justify;
+ 
+  }
+.information-icon a{
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+.form-icon a {
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
