@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import "./Form.css";
+import FormList from "../../components/formList/FormList";
 
 const calculateSleepDuration = (bedtime, wakeup) => {
   if (!bedtime || !wakeup) return "";
@@ -83,12 +84,12 @@ function Form() {
         <label>Deporte:</label>
         <div>
           <label for="option1">
-            <input type="radio" id="option1" name="option" value="option1" />{" "}
+            <input type="radio" id="option1" name="optionSport" value="option1" />{" "}
             Si
           </label>
 
           <label for="option2">
-            <input type="radio" id="option2" name="option" value="option2" />{" "}
+            <input type="radio" id="option2" name="optionSport" value="option2" />{" "}
             No
           </label>
 
@@ -99,12 +100,12 @@ function Form() {
         <label>Sensación térmica:</label>
         <div>
           <label for="option1">
-            <input type="radio" id="option3" name="option" value="option3" />{" "}
+            <input type="radio" id="option3" name="optionSensation" value="option3" />{" "}
             Fría
           </label>
 
           <label for="option2">
-            <input type="radio" id="option3" name="option" value="option3" />{" "}
+            <input type="radio" id="option3" name="optionSensation" value="option3" />{" "}
             Cálida
           </label>
         </div>
@@ -124,6 +125,7 @@ function Form() {
     </button>
   </form>
 </div>
+<FormList/>
       <Footer />
     </>
   );

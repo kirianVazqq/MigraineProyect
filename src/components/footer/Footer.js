@@ -7,11 +7,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© 2023 - Mi Sitio Web</p>
+        <p>© 2023 - MigraineProyect Web© 2023  Todos los derechos reservados</p>
         <ul className="footer-links">
           <li><a href="/home">Home</a></li>
           <li><a href="/info"> Información</a></li>
           <li><a href="/form">Seguimiento</a></li>
+          <li> <a href="/rss.xml"> RSS</a></li>
         </ul>
 
         <div className='social'>

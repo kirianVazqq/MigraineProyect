@@ -1,25 +1,34 @@
 function CountryList(){
     const countries = [
         {
-            latitude:28.033318 ,
-            longitude: -15.493386,
-            title: "Burbujita" ,
-            description: "The best shop of the world."
-        
+            latitude: 40.7128,
+            longitude: -74.0060,
+            title: "Nueva York",
+            description: "Ciudad más importante de Estados Unidos."
         },
         {
-            latitude:28.029400979433476 ,
-            longitude:-15.497694693583881,
-            title: "Funcionara" ,
-            description: "Si funciona."
-        
+            latitude: -22.9068,
+            longitude: -43.1729,
+            title: "Río de Janeiro",
+            description: "Ciudad importante de América Latina, Brasil."
         },
         {
-            latitude:28.029846087956855 ,
-            longitude:-15.499883376170219,
-            title: "Este si" ,
-            description: "Bastante guay."
-        
+            latitude: 35.6895,
+            longitude: 139.6917,
+            title: "Tokio",
+            description: "Ciudad más importante de Asia, Japón."
+        },
+        {
+            latitude: 48.8566,
+            longitude: 2.3522,
+            title: "París",
+            description: "Ciudad importante de Europa, Francia."
+        },
+        {
+            latitude: -33.8688,
+            longitude: 151.2093,
+            title: "Sídney",
+            description: "Ciudad importante de Oceanía, Australia."
         }
     ];
     return countries;

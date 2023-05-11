@@ -16,6 +16,8 @@ function App() {
       <Route path="/form" element={<Form />}/>
       <Route path="/info" element={<Info />}/>
       <Route path="/prueba" element={<Prueba />}/>
+
+
     </Routes>
   );
 }

@@ -9,7 +9,7 @@ function MapCountry(props) {
     <>
       <MapContainer
         center={[28.033318, -15.493386]}
-        zoom={13}
+        zoom={2}
         scrollWheelZoom={false}
       >
         <TileLayer
