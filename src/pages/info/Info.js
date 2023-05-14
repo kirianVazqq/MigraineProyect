@@ -16,7 +16,7 @@ function Info() {
         <>
           <div>
             <Imgtext
-              imageSrc="./images/imagenInfoAncha.jpg"
+               imageSrc="/images/imagentexto.jpg"
               imageAlt="Que esla migraña"
               h1text="Migraña, ¿Que es?"
               text="La migraña es un trastorno del
