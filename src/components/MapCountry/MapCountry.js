@@ -2,7 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./MapCountry.css";
 // import 'leaflet/dist/leaflet.css';
 
-
 function MapCountry(props) {
   const countries = props.countries;
   return (
@@ -16,10 +15,9 @@ function MapCountry(props) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        
+
         {countries.map((s) => {
           return (
-            
             <Marker position={[s.latitude, s.longitude]}>
               <Popup>
                 {s.title} <br /> {s.description}
@@ -32,5 +30,3 @@ function MapCountry(props) {
   );
 }
 export default MapCountry;
-
-

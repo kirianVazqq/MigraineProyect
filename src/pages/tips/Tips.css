@@ -1,0 +1,44 @@
+.tip-text h1 {
+  color: #7fbeab;
+  margin: 20px;
+}
+.tip-text p {
+  margin: 20px;
+}
+.tip-text li {
+  margin: 20px;
+}
+
+.tip-img img {
+  width: 100%;
+}
+@media (min-width: 980px) {
+  .tip {
+    display: flex;
+  }
+  .tip-text {
+    width: 50%;
+  }
+  .tip-text h1 {
+    font-size: 50px;
+    text-align-last: center;
+  }
+  .tip-text p {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .tip-text li {
+    font-size: 20px;
+  }
+  .tip-img {
+    overflow: hidden;
+    width: 50%;
+    background-color: black;
+    height: 400px;
+  }
+  .tip-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

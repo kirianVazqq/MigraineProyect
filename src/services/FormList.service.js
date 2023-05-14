@@ -1,29 +1,39 @@
 import db from "../components/firebaseConfig/firebase.js";
 import { ref, get, remove, push } from "firebase/database";
+
 const dbRef = ref(db, "/registers");
 
-const getAllInfo = () => {
+const getAllRegisters = () => {
   return get(dbRef);
 };
 
-const addInfo = (bedtime, day, observations, sleepDuration, sport, thermalSensation, wakeupTime    ) => {
+const addRegister = (
+  day,
+  bedtime,
+  wakeupTime,
+  sleepDuration,
+  sport,
+  thermanSensation,
+  observations
+) => {
   return push(dbRef, {
+    day: day,
     bedtime: bedtime,
-    observations: observations,
+    wakeupTime: wakeupTime,
     sleepDuration: sleepDuration,
     sport: sport,
-    thermalSensation: thermalSensation,
-    wakeupTime: wakeupTime,
+    thermanSensation: thermanSensation,
+    observations: observations,
   });
 };
 
-const removeInfo = (key) => {
-  const dbRefInfo = ref(db, `/registers/${key}`);
-  return remove(dbRefInfo);
+const removeRegister = (key) => {
+  const dbRefRegister = ref(db, `/registers/${key}`);
+  return remove(dbRefRegister);
 };
 
 export default {
-    getAllInfo,
-    addInfo,
-    removeInfo,
+  getAllRegisters,
+  addRegister,
+  removeRegister,
 };

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import CuriositiesService from "../../services/Curiosities.service";
-import './Curiositiesjson.css';
+import "./Curiositiesjson.css";
 
 function CuriosityList() {
-  const [curiosity, setCuriosity] = useState({ title: '', text: '' });
+  const [curiosity, setCuriosity] = useState({ title: "", text: "" });
 
   const getRandomCuriosity = () => {
     const allCuriosities = CuriositiesService.getCuriosities();
@@ -13,8 +13,14 @@ function CuriosityList() {
 
   return (
     <>
-      <button className='button-curiosities' onClick={getRandomCuriosity}>Mostrar curiosidad</button>
-      <p className='text-on-image'>{curiosity.title ? `${curiosity.title}: ${curiosity.text}` : 'Presiona el botón para mostrar una curiosidad'}</p>
+      <button className="button-curiosities" onClick={getRandomCuriosity}>
+        Mostrar curiosidad
+      </button>
+      <p className="text-on-image">
+        {curiosity.title
+          ? `${curiosity.title}: ${curiosity.text}`
+          : "Presiona el botón para mostrar una curiosidad"}
+      </p>
     </>
   );
 }

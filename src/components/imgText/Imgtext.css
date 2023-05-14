@@ -9,16 +9,16 @@
 .image-container img {
   display: block;
   max-width: none;
-  height: 58vh;
+  height: 70vh;
 }
 
 .image-container p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; /* Elige el color de texto que prefieras */
-  font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+  transform: translate(-50%, -20%);
+  color: #fff; 
+  font-size: 18px;
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   top: 60%;
@@ -35,9 +35,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -320%);
-  color: #fff; /* Elige el color de texto que prefieras */
-  font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
+  transform: translate(-50%, -280%);
+  color: #fff;
+  font-size: 20px; 
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   top: 60%;
@@ -46,50 +46,43 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .image-container h1 {
-  
-        font-size: 28px; /* Ajusta el tamaño de fuente según sea necesario */ 
-      }  
-      .image-container p {
-    
-        font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
-      }
-      .image-container img {
-        display: block;
-        max-width: none;
-        height: 58vh;
-      }
-
+  .image-container h1 {
+    font-size: 28px;
+  }
+  .image-container p {
+    font-size: 24px; 
+  }
+  .image-container img {
+    display: block;
+    max-width: none;
+    height: 58vh;
+  }
 }
-      
-      /* Large devices (laptops/desktops, 992px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .image-container h1 {
-        font-size: 40px; /* Ajusta el tamaño de fuente según sea necesario */
-        
-      }  
-      .image-container p {
-         font-size: 28px;
-  
-      }
-      .image-container img {
-        display: block;
-        max-width: none;
-        height: 58vh;
-      }
+  .image-container h1 {
+    font-size: 40px;
+  }
+  .image-container p {
+    font-size: 28px;
+  }
+  .image-container img {
+    display: block;
+    max-width: none;
+    height: 58vh;
+  }
 }
 @media only screen and (min-width: 1200px) {
-    .image-container h1 {
-        font-size: 50px; /* Ajusta el tamaño de fuente según sea necesario */
-        
-      }  
-      .image-container p {
-         font-size: 30px;
-  
-      }
-      .image-container img {
-        display: block;
-        max-width: none;
-        height: 58vh;
-      }
+  .image-container h1 {
+    font-size: 50px; 
+  }
+  .image-container p {
+    font-size: 30px;
+  }
+  .image-container img {
+    display: block;
+    max-width: none;
+    height: 58vh;
+  }
 }

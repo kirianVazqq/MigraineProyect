@@ -25,7 +25,6 @@ body {
   width: 50vh;
   margin-top: 1px;
   margin: 70px;
- 
 }
 .type-episodic img {
   max-width: 300px;
@@ -43,7 +42,6 @@ body {
   width: 50vh;
   margin-top: 1px;
   margin: 70px;
-
 }
 .type-chronic img {
   max-width: 300px;
@@ -62,7 +60,6 @@ body {
 .type-no-aura p {
   color: black;
   font-size: 25px;
-  
 }
 .type-no-aura h1 {
   color: #7fbeab;

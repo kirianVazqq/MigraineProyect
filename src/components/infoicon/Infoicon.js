@@ -2,7 +2,6 @@ import "./Infoicon.css";
 const Infoicon = () => {
   return (
     <div className="div-infoicon">
-
       <div className="form-icon">
         <img src="images/formicon.png" alt=" icono formulario" />
         <p>
@@ -22,7 +21,6 @@ const Infoicon = () => {
         </p>
         <a href="/info">Saber más</a>
       </div>
-      
     </div>
   );
 };

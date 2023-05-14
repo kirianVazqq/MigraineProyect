@@ -15,7 +15,7 @@ const ImageCarousel = ({ images }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNextImage, 4000); // cambia 3000 por el tiempo deseado en milisegundos
+    const interval = setInterval(goToNextImage, 4000); 
     return () => clearInterval(interval);
   }, [currentImageIndex]);
 
@@ -37,8 +37,3 @@ const ImageCarousel = ({ images }) => {
 };
 
 export default ImageCarousel;
-
-
-
-
-

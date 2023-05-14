@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow: hidden;
+  height: 230px;
 }
 
 .overlay {
@@ -19,15 +21,17 @@
 
 .background-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Ajustes para tablet */
 @media (min-width: 768px) {
-
 }
 
 /* Ajustes para desktop */
 @media (min-width: 992px) {
-
+  .container-curiosities {
+    height: 400px;
+  }
 }

@@ -1,17 +1,17 @@
 import { useState, useEffect, useRef } from "react";
-import { FaRegTrashAlt } from 'react-icons/fa';
+import { FaRegTrashAlt } from "react-icons/fa";
 import RegisterService from "../../services/FormList.service";
-// import "./FormList.css";
+import "./FormList.css";
 
-function FormList() {
-  const [registers, setRegisters] = useState([]);
+function RegistersList() {
+  const [register, setRegister] = useState([]);
   const refForm = useRef();
 
   const getAllRegisters = () => {
-    RegisterService.getAllInfo()
+    RegisterService.getAllRegisters()
       .then((items) => {
         let allRegisters = [];
-        items.forEach(item => {
+        items.forEach((item) => {
           const key = item.key;
           const data = item.val();
           allRegisters.push({
@@ -21,32 +21,76 @@ function FormList() {
             wakeupTime: data.wakeupTime,
             sleepDuration: data.sleepDuration,
             sport: data.sport,
-            thermalSensation: data.thermalSensation,
+            thermanSensation: data.thermanSensation,
             observations: data.observations,
           });
         });
-        setRegisters([...allRegisters]);
+        setRegister([...allRegisters]);
       })
       .catch((err) => {
         console.error(err);
       });
-  }
+  };
 
   const removeRegister = (key) => {
-    RegisterService.removeInfo(key).then((res) => {
+    RegisterService.removeRegister(key).then((res) => {
       getAllRegisters();
     });
-  }
-
+  };
   const addRegister = (e) => {
     e.preventDefault();
-    // Aquí se agregarán los campos del formulario como variables
+    const day = e.target.day.value;
+    const bedtime = e.target.bedtime.value;
+    const wakeupTime = e.target.wakeupTime.value;
+    const sport = e.target.sport.value;
+    const thermanSensation = e.target.thermanSensation.value;
+    const observations = e.target.observations.value;
 
-    RegisterService.addInfo(/* Aquí se pasarán los campos del formulario como argumentos */).then((res) => {
+    const bedtimeDate = new Date(`1970-01-01T${bedtime}:00`);
+    const wakeupTimeDate = new Date(`1970-01-01T${wakeupTime}:00`);
+
+    let sleepDurationHours = wakeupTimeDate.getHours() - bedtimeDate.getHours();
+    let sleepDurationMinutes =
+      wakeupTimeDate.getMinutes() - bedtimeDate.getMinutes();
+
+    if (sleepDurationMinutes < 0) {
+      sleepDurationHours--;
+      sleepDurationMinutes = 60 + sleepDurationMinutes;
+    }
+
+    if (sleepDurationHours < 0) {
+      sleepDurationHours = 24 + sleepDurationHours;
+    }
+
+    const sleepDuration = `${sleepDurationHours
+      .toString()
+      .padStart(2, "0")}:${sleepDurationMinutes.toString().padStart(2, "0")}`;
+
+    RegisterService.addRegister(
+      day,
+      bedtime,
+      wakeupTime,
+      sleepDuration,
+      sport,
+      thermanSensation,
+      observations
+    ).then((res) => {
       refForm.current.reset();
-      setRegisters(oldValues => [...oldValues, { key: res.key, /* Aquí se agregarán los campos del formulario como propiedades */ }])
-    })
-  }
+      setRegister((oldValues) => [
+        ...oldValues,
+        {
+          key: res.key,
+          day,
+          bedtime,
+          wakeupTime,
+          sleepDuration,
+          sport,
+          thermanSensation,
+          observations,
+        },
+      ]);
+    });
+  };
 
   useEffect(() => {
     getAllRegisters();
@@ -54,25 +98,107 @@ function FormList() {
 
   return (
     <>
-      <div className="register-list-main-container">
-        <div className="register-form-container">
+      <div className="registers-list-main-container">
+        <div className="registers-form-container">
           <form id="register-form" onSubmit={addRegister} ref={refForm}>
-            {/* Aquí se agregarán los campos del formulario */}
-            <input className="rounded-input" type="submit" value="Guardar"/>
+            <div className="Form">
+              <div className="form-group">
+                {" "}
+                <label>Día</label>
+                <input
+                  className="rounded-input"
+                  type="date"
+                  name="day"
+                  placeholder="day"
+                />
+              </div>
+              <div className="form-group">
+                {" "}
+                <label>Hora de acostarse</label>
+                <input
+                  className="rounded-input"
+                  type="time"
+                  name="bedtime"
+                  placeholder="bedtime"
+                />
+              </div>
+              <div className="form-group">
+                <label>Hora de levantarse</label>
+                <input
+                  className="rounded-input"
+                  type="time"
+                  name="wakeupTime"
+                  placeholder="wakeupTime"
+                />
+              </div>
+              <div className="form-group">
+                {" "}
+                <label>Duracion del sueño</label>
+                <input
+                  className="rounded-input"
+                  type="time"
+                  name="sleepDuration"
+                  placeholder="sleepDuration"
+                />
+              </div>
+              <div className="form-group">
+                <label>Deporte</label>
+                <input
+                  className="rounded-input"
+                  type="text"
+                  name="sport"
+                  placeholder="SI O NO"
+                />
+              </div>
+              <div className="form-group">
+                {" "}
+                <label>Sensanción térmica</label>
+                <input
+                  className="rounded-input"
+                  type="text"
+                  name="thermanSensation"
+                  placeholder="Frio o Calido"
+                />
+              </div>
+              <div className="form-group">
+                <label>Observaciones</label>
+                <input
+                  className="rounded-input"
+                  type="text-area"
+                  name="observations"
+                  placeholder=""
+                />
+              </div>
+
+              <input
+                className="rounded-input"
+                type="submit"
+                value="Añadir registro"
+              />
+            </div>
           </form>
         </div>
 
-        <div className="register-list">
-          {registers.map(r =>
-            <div className="register-item" key={r.key}>
-              {/* Aquí se mostrarán los campos del registro */}
-              <FaRegTrashAlt className="delete-register" onClick={() => removeRegister(r.key)}/>
+        <div className="registers-list">
+          {register.map((b) => (
+            <div className="register-item" key={b.key}>
+              <p>{b.day}</p>
+              <p>{b.bedtime} </p>
+              <p>{b.wakeupTime}</p>
+              <p>{b.sleepDuration}</p>
+              <p>{b.sport}</p>
+              <p>{b.thermanSensation} </p>
+              <p>{b.observations} </p>
+              <FaRegTrashAlt
+                className="delete-register"
+                onClick={() => removeRegister(b.key)}
+              />
             </div>
-          )}
+          ))}
         </div>
       </div>
     </>
   );
 }
 
-export default FormList;
+export default RegistersList;

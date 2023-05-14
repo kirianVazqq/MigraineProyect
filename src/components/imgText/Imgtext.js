@@ -1,8 +1,8 @@
-import React from 'react';
-import './Imgtext.css';
+import React from "react";
+import "./Imgtext.css";
 
 const Imgtext = (props) => {
-  const { imageSrc, imageAlt,h1text, text } = props;
+  const { imageSrc, imageAlt, h1text, text } = props;
 
   return (
     <div className="image-container">

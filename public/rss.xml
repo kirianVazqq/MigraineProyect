@@ -1,15 +1,69 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 
-<channel>
-  <title>W3Schools Home Page</title>
-  <link>https://www.w3schools.com</link>
-  <description>Free web building tutorials</description>
-  <item>
-    <title>RSS Tutorial</title>
-    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-</channel>
-
+  <tips>
+  <tip>
+    <title>Planificación</title>
+    <content>
+      <description>Un poco de estrés en el trabajo puede ser fuente de motivación. Pero no lo
+        olvidemos: el estrés crónico y mal controlado, puede afectar negativamente a tu salud y
+        aumentar el riesgo de sufrir ataques de migraña.</description>
+      <item>Si te sientes bajo presión, sal a dar un paseo. Un poco de aire fresco te puede ayudar a
+        retomar tu actividad con más energía.</item>
+      <item>Utiliza técnicas de meditación que te ayuden a controlar el estrés; respirar
+        profundamente relajará tu sistema nervioso y te ayudará a evaluar la situación que te
+        inquieta desde otra perspectiva.</item>
+    </content>
+  </tip>
+  <tip>
+    <title>Hidratación</title>
+    <content>
+      <description>La deshidratación puede ser un disparador de migrañas. Por tanto, es fundamental
+        mantenerse hidratado para prevenir los ataques.</description>
+      <item>Si notas que tienes la boca seca, es posible que ya estés deshidratado. No esperes a
+        tener sed para beber agua.</item>
+      <item>Lleva siempre contigo una botella de agua. Mantente hidratado bebiendo pequeños sorbos a
+        lo largo del día, independientemente de si tienes sed o no.</item>
+    </content>
+  </tip>
+  <tip>
+    <title>Alimentación</title>
+    <content>
+      <description>Mantener una dieta equilibrada puede ayudarte a controlar tus migrañas. Algunos
+        alimentos, como los que contienen glutamato monosódico o los alimentos procesados, pueden
+        desencadenar ataques de migraña.</description>
+      <item>Si tienes hambre, no te saltes las comidas. Comer regularmente puede ayudarte a mantener
+        estables los niveles de azúcar en sangre y a evitar la migraña.</item>
+      <item>Si notas que ciertos alimentos desencadenan tus migrañas, intenta eliminarlos de tu
+        dieta y observa si tus síntomas mejoran.</item>
+    </content>
+  </tip>
+  <tip>
+    <title>Descanso</title>
+    <content>
+      <description>Dormir bien es esencial para mantener a raya las migrañas. La falta de sueño
+        puede aumentar el riesgo de sufrir un ataque de migraña.</description>
+      <item>Si te sientes cansado, intenta echar una siesta. Asegúrate de que tu entorno es propicio
+        para el descanso: oscurece la habitación, reduce el ruido y asegúrate de que la temperatura
+        es la adecuada.</item>
+      <item>Establece una rutina de sueño. Intenta acostarte y levantarte a la misma hora todos los
+        días para ayudar a regular tu reloj interno y mejorar la calidad de tu sueño.</item>
+    </content>
+  </tip>
+  <tip>
+    <title>Ejercicio</title>
+    <content>
+      <description> El ejercicio regular puede ayudarte a controlar tus migrañas.
+        La actividad física libera endorfinas, que actúan como
+        analgésicos naturales</description>
+      <item> Si te sientes tenso, realiza un poco de ejercicio. Un paseo
+        rápido o una sesión de yoga pueden ayudarte a liberar la
+        tensión y a reducir la probabilidad de sufrir un ataque de
+        migraña.</item>
+      <item>Incorpora el ejercicio a tu rutina diaria. Intenta realizar al
+        menos 30 minutos de actividad física moderada la mayoría de
+        los días de la semana.</item>
+    </content>
+  </tip>
+  </tips>
 </rss>

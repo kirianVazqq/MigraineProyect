@@ -1,44 +1,42 @@
-body{
-  background-color: #F4F8FA ;
+body {
+  background-color: #f4f8fa;
 }
-.img-text{
-    position: relative;
-    display: inline-block;
-    display:flex;
-    flex-direction: row;
+.img-text {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
 }
 .img-text img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .img-text h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-70%, -500%);
-    color: #fff; /* Elige el color de texto que prefieras */
-    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
-    background-color: rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-    top: 60%;
-    left: 50%;
-    padding: 5px;
-    
-    
-  }
-  .img-text p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff; /* Elige el color de texto que prefieras */
-    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
-    background-color: rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-    top: 60%;
-    left: 50%;
-    padding: 25px;
-    width: 100%;
-    max-width: 100vw; 
-  }
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.img-text h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -500%);
+  color: #fff;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  top: 60%;
+  left: 50%;
+  padding: 5px;
+}
+.img-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  top: 60%;
+  left: 50%;
+  padding: 25px;
+  width: 100%;
+  max-width: 100vw;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import ImageCarousel from "../../components/imageCarousel/ImageCarousel";
-import image1 from "../../img/hombredolor.jpg";
-import image2 from "../../img/mujerdolor.png";
-import image3 from "../../img/mujerdolor2.png";
-import image4 from "../../img/mujerdolor3.jpeg";
+import image1 from "../../img/hombreDolor.jpg";
+import image2 from "../../img/mujerDolor.png";
+import image3 from "../../img/mujerDolor2.png";
+import image4 from "../../img/mujerDolor3.jpeg";
 import Footer from "../../components/footer/Footer";
 import Curiosities from "../../components/curiosities/Curiosities";
 import Infoicon from "../../components/infoicon/Infoicon";
@@ -16,10 +16,8 @@ function Home() {
       {
         <>
           <ImageCarousel images={[image1, image2, image3, image4]} />
-          <Infoicon/>
-          <Curiosities/>
-         
-       
+          <Infoicon />
+          <Curiosities />
         </>
       }
       <Footer />

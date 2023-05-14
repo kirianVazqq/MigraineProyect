@@ -1,16 +1,26 @@
-
 .carousel-container {
   position: relative;
   width: auto;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
-  
+}
+.carousel-image-container {
+  position: relative;
 }
 
+.carousel-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .carousel-image {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 }
 
 .carousel-button {
@@ -33,29 +43,10 @@
   right: 10px;
 }
 
-
-@media (min-width: 1024px) {
-  .carousel-container {
-
-
-  }
-
-}
-
-
-
-/*
-@media (min-width: 1024px) {
-  .carousel-container {
-    width: 100%; 
-    height: 100vh; 
-  }
-
+@media (min-width: 980px) {
   .carousel-image {
-    width: 100%; 
-    height: 100vh; 
-    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
-*/
-   
