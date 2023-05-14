@@ -17,7 +17,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -20%);
-  color: #fff; 
+  color: #fff;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
@@ -37,7 +37,7 @@
   left: 50%;
   transform: translate(-50%, -280%);
   color: #fff;
-  font-size: 20px; 
+  font-size: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   top: 60%;
@@ -50,7 +50,7 @@
     font-size: 28px;
   }
   .image-container p {
-    font-size: 24px; 
+    font-size: 24px;
   }
   .image-container img {
     display: block;
@@ -63,6 +63,7 @@
 @media only screen and (min-width: 992px) {
   .image-container h1 {
     font-size: 40px;
+    transform: translate(-50%, -200%);
   }
   .image-container p {
     font-size: 28px;
@@ -75,7 +76,8 @@
 }
 @media only screen and (min-width: 1200px) {
   .image-container h1 {
-    font-size: 50px; 
+    font-size: 50px;
+    transform: translate(-50%, -200%);
   }
   .image-container p {
     font-size: 30px;
