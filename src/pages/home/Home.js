@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import ImageCarousel from "../../components/imageCarousel/ImageCarousel";
-import image1 from "../../img/hombreDolor.jpg";
-import image2 from "../../img/mujerDolor.png";
-import image3 from "../../img/mujerDolor2.png";
-import image4 from "../../img/mujerDolor3.jpeg";
+
 import Footer from "../../components/footer/Footer";
 import Curiosities from "../../components/curiosities/Curiosities";
 import Infoicon from "../../components/infoicon/Infoicon";
 
 function Home() {
+  const image1 = "./images/hombreDolor.jpg";
+  const image2 = "./images/mujerDolor.png";
+  const image3 = "./images/mujerDolor2.png";
+  const image4 = "./images/mujerDolor3.jpeg";
   return (
     <div className="Home">
       <Navbar />
