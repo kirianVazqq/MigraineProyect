@@ -181,19 +181,20 @@ function RegistersList() {
 
         <div className="registers-list">
           {register.map((b) => (
-            <div className="register-item" key={b.key}>
-              <p>{b.day}</p>
-              <p>{b.bedtime} </p>
-              <p>{b.wakeupTime}</p>
-              <p>{b.sleepDuration}</p>
-              <p>{b.sport}</p>
-              <p>{b.thermanSensation} </p>
-              <p>{b.observations} </p>
-              <FaRegTrashAlt
-                className="delete-register"
-                onClick={() => removeRegister(b.key)}
-              />
-            </div>
+       <div className="register-item" key={b.key}>
+       <p>Día: {b.day}</p>
+       <p>Hora de acostarse: {b.bedtime}</p>
+       <p>Hora de levantarse: {b.wakeupTime}</p>
+       <p>Duración del sueño: {b.sleepDuration}</p>
+       <p>Deporte: {b.sport}</p>
+       <p>Sensanción térmica: {b.thermanSensation}</p>
+       <p>Observaciones: {b.observations}</p>
+       <FaRegTrashAlt
+         className="delete-register"
+         onClick={() => removeRegister(b.key)}
+       />
+     </div>
+     
           ))}
         </div>
       </div>
