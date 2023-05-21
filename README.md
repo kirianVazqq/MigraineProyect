@@ -21,18 +21,21 @@ _npm -v_
 
 _First, clone this repository to your local machine._
 
-git clone https://github.com/username/migraine-project.git
+**git clone https://github.com/username/migraine-project.git**
 
 
 
 _Next, navigate to the project directory._
-cd migraine-project
+
+**cd migraine-project**
 
 _Install the project's dependencies._
-npm install
+
+**npm install**
 
 _Now you can start the React development server._
-npm start
+
+**npm start**
 
 -The site should now be accessible at http://localhost:3000._
 
